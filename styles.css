@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.toolbox-cont{
+    height: 5rem;
+    background-color: #3E497A;
+    display: flex;
+    align-items: center;
+}
+
+.toolbox-cont > *{
+    margin-left: 4rem;
+    border-radius: 2px;
+}
+
+.toolbox-priority-cont{
+    height: 3.5rem;
+    width: 16rem;
+    background-color: #21325E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.action-btn-cont{
+    height: 3rem;
+    width: 8rem;
+    background-color: #21325E;
+    display: flex;
+}
+
+.action-btn-cont >*{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.color{
+    height: 1.2rem;
+    width: 2.5rem;
+    background-color: lightsalmon;
+    border-radius: 2px;
+}
+.blue{
+    background-color: #00FFDD;
+}
+.yellow{
+    background-color: #FFF89A;
+}
+.green{
+    background-color: #65C18C;
+}
+.pink{
+    background-color: #FF5C8D;
+}
+
+.action-btn-cont > *:hover{
+    background-color: #0E185F;
+}
+/* .add-btn:hover{
+    background-color: #0E185F;
+} */
+/* .remove-btn:hover{
+    background-color: #0E185F;
+} */
+
+
+/* Main Container */
+
+.modal-cont{
+    height: 50vh;
+    width: 45vw;
+    /* background-color: #00FFDD; */
+    position: absolute;
+    /* calc(100vh - boxheight)/2 */
+    /* top: calc(100vh /2); */
+    top: calc(( 100vh - 50vh ) / 2 );
+    left: calc(( 100vw - 45vw ) / 2 );
+    /* display: flex; */
+    display: none;
+}
+.textarea-cont{
+    height: 100%;
+    width: 75%;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 2rem;
+    background-color: #EEEEEE;
+    font-size: 2rem;
+}
+.priority-colors-cont{
+    height: 100%;
+    width: 25%;
+    background-color: #3E497A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 2rem; */
+}
+
+.priority-color{
+    height: 3rem;
+    width: 55%;
+    border-radius: 2px;
+    /* background-color: lightcoral; */
+}
+
+.border{
+    border: 5px solid #FFF6EA;
+}
+
+/* Tickets */
+
+.ticket-cont{
+    height: 12rem;
+    width: 16rem;
+    background-color: #EEEEEE;
+}
+.ticket-color{
+    height: 1rem;
+    background-color: lightpink;
+}
+.ticket-id{
+    height: 2rem;
+    /* background-color: #EEEEEE; */
+    padding: 0.4rem;
+}
+.task-area{
+    height: calc(100% - 1rem - 2rem);
+    /* background-color: #EEEEEE; */
+    padding: 0.4rem;
+}
+
+.main-cont{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: center;
+}
