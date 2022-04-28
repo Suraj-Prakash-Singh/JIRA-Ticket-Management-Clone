@@ -88,7 +88,7 @@ removeBtn.addEventListener("click", (e) => {
     removeFlag = !removeFlag; 
 })
 
-// listen for ctr+enter when in modal and genertae ticket of that text when buttons are pressed
+//listen for ctr+enter when in modal and genertae ticket of that text when buttons are pressed
 
 //Genrating tickets dynamically
 
