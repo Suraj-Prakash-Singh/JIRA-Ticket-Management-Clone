@@ -114,6 +114,7 @@ modalCont.addEventListener("keydown", (e) => {
 function createTicket(ticketColor, ticketTask, ticketID) {
     let id = ticketID || shortid();
     let ticketcon = document.createElement("div");
+    ticketTask = ticketTask.toUpperCase();
     ticketcon.setAttribute("class", "ticket-cont");
     ticketcon.innerHTML =
         `<div class="ticket-color ${ticketColor}"></div>
